@@ -24,8 +24,8 @@ def work(conn, addr):
         with open('index.html', 'rb') as f:
             answer = f.read()
             conn.send(h.encode('utf-8') + answer)
-    elif rez == "/1.html":
-        with open('1.html', 'rb') as f:
+    elif rez == "/site.html":
+        with open('site.html', 'rb') as f:
             answer = f.read()
             conn.send(h.encode('utf-8') + answer)
     else:
